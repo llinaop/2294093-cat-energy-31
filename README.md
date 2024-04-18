@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Полина Щурова](https://up.htmlacademy.ru/adaptive/31/user/2294093).
-* Наставник: `[Антон Варнавский](https://htmlacademy.ru/profile/anton_varnauski)`.
+* Наставник: [Антон Варнавский](https://htmlacademy.ru/profile/anton_varnauski).
 
 ---
 
