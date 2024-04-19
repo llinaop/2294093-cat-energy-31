@@ -11,11 +11,11 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="#">Логотип "Кэт энерджи"
-      <img src="#" width="33" height="38" alt="Логотип  Кэт энерджи">
-    </a>
-    <nav class="main-nav">
-      <div class="main-nav__wrapper">
+    <div class="main-header__container">
+      <nav class="main-nav">
+        <a class="main-nav__logo" href="#">Логотип "Кэт энерджи"
+          <img class="logo__image" src="#" width="33" height="38" alt="Логотип  Кэт энерджи">
+        </a>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a class="main-nav__link" href="index.html">
@@ -33,15 +33,15 @@
             </a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
   <main class="main-container">
-    <section class="nutrition">
-      <h1 class="nutrition__heading">Функциональное питание для котов</h1>
-      <p class="nutrition__description">Занялся собой? Займись котом!</p>
-      <img class="nutrition__image" src="#" width="280" height="270" alt="Фотография Cat Energy Pro">
-      <button class="nutrition__program button" type="button">Подобрать программу</button>
+    <section class="hero">
+      <h1 class="hero__heading">Функциональное питание для котов</h1>
+      <p class="hero__description">Занялся собой? Займись котом!</p>
+      <img class="hero__image" src="#" width="280" height="270" alt="Фотография Cat Energy Pro">
+      <button class="hero__program button" type="button">Подобрать программу</button>
     </section>
     <section class="programs">
       <h2 class="visually-hidden">Программы</h2>
@@ -121,7 +121,6 @@
           </address>
         </div>
         <div class="contacts__map">
-
         </div>
       </div>
     </section>
@@ -140,8 +139,9 @@
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
-        <img class="copyright-image" src="#" width="27" height="34" alt="Логотип HTML Academy">
+        <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy
+          <img class="copyright-image" src="#" width="27" height="34" alt="Логотип HTML Academy">
+        </a>
       </div>
     </footer>
   </main>
