@@ -6,6 +6,10 @@
   <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -13,22 +17,22 @@
   <header class="main-header">
     <div class="main-header__container">
       <nav class="main-nav">
-        <a class="main-nav__logo" href="#">Логотип "Кэт энерджи"
+        <a class="main-nav__logo logo" href="#">Логотип "Кэт энерджи"
           <img class="logo__image" src="#" width="33" height="38" alt="Логотип  Кэт энерджи">
         </a>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a class="main-nav__link" href="index.html">
+            <a class="site-list__link" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a class="main-nav__link" href="catalog.html">
+            <a class="site-list__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a class="main-nav__link" href="#">
+            <a class="site-list__link" href="#">
               Подбор программы
             </a>
           </li>
@@ -40,7 +44,11 @@
     <section class="hero">
       <h1 class="hero__heading">Функциональное питание для котов</h1>
       <p class="hero__description">Занялся собой? Займись котом!</p>
-      <img class="hero__image" src="#" width="280" height="270" alt="Фотография Cat Energy Pro">
+      <picture>
+        <source media="(min-width: 1440px)" width="552" height="499" type=" image/png" srcset="images/index/hero-desktop@1x.png 1x, images/index/hero-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/index/hero-tablet@1x.png 1x, images/index/hero-tablet@2x.png 2x">
+        <img class="card__image" src="images/index/hero-mobile@1x.png" width="280" height="270" srcset="images/catalog/chicken-500-mobile@2x.png 2x" alt="Фотография Cat Energy Pro">
+      </picture>
       <button class="hero__program button" type="button">Подобрать программу</button>
     </section>
     <section class="programs">
@@ -103,8 +111,14 @@
         </div>
       </dl>
       <div class="example__wrapper slider">
-        <img class="slider__image--fat" src="#" width="280" height="256" alt="Фотография толстого кота">
-        <img class="slider__image--thin" src="#" width="280" height="256" alt="Фотография худого кота">
+        <picture>
+          <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/index/fat-cat-tablet@1x.png 1x, images/index/fat-cat-tablet@2x.png 2x">
+          <img class="slider__image" src="images/index/fat-cat-mobile@1x.png" width="280" height="256" srcset="images/index/fat-cat-mobile@2x.png" alt="Фотография толстого кота">
+        </picture>
+        <picture>
+          <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/index/thin-cat-tablet@1x.png 1x, images/index/thin-cat-tablet@2x.png 2x">
+          <img class="slider__image" src="images/index/thin-cat-mobile@1x.png" width="280" height="256" srcset="images/index/thin-cat-mobile@2x.png" alt="Фотография худого кота">
+        </picture>
       </div>
     </section>
     <section class="cooperation">
@@ -121,28 +135,29 @@
           </address>
         </div>
         <div class="contacts__map">
+          <picture>
+            <source media="(min-width: 1440px)" width="1440" height="400" type="image/jpeg" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" width="768" height="400" type="image/jpeg" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
+            <img class="card__image" src="images/map-mobile@1x.jpg" width="320" height="362" srcset="images/map-mobile@2x.jpg" alt="Карта">
+          </picture>
         </div>
       </div>
     </section>
     <footer class="main-footer">
-      <div class="main-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">ВКонтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">Ютуб</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="#">Телеграм</a>
-          </li>
-        </ul>
-      </div>
-      <div class="main-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru">HTML Academy
-          <img class="copyright-image" src="#" width="27" height="34" alt="Логотип HTML Academy">
-        </a>
-      </div>
+      <ul class="social__list social">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="#">ВКонтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#">Ютуб</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="#">Телеграм</a>
+        </li>
+      </ul>
+      <a class="copyright__link copyright" href="https://htmlacademy.ru">HTML Academy
+        <img class="copyright-image" src="#" width="27" height="34" alt="Логотип HTML Academy">
+      </a>
     </footer>
   </main>
 </body>
