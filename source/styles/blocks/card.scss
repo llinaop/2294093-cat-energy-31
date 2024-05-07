@@ -1,0 +1,50 @@
+.card {
+  list-style-type: none;
+}
+
+.card__link {
+  text-decoration: none;
+}
+
+.card__link--image {
+
+}
+
+.card__image {
+
+}
+
+.card__link--name {
+
+}
+
+.card__name {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $card-color-black;
+}
+
+.card__list {
+
+}
+
+.card__item {
+  list-style-type: none;
+}
+
+.card__characteristic {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.card__value {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.card__button {
+
+}

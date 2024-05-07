@@ -1,0 +1,26 @@
+.card-more {
+
+}
+
+.card-more__link {
+  text-decoration: none;
+}
+
+.card-more__name {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #111111;
+}
+
+.card-more__description {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.card-more__button {
+  background-color: $basic-grey;
+  color: $base-color-text;
+}

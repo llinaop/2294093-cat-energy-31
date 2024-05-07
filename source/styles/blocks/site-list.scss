@@ -1,3 +1,19 @@
 .site-list {
 
 }
+
+.site-list__item {
+  list-style-type: none;
+}
+
+.site-list__item--active {
+
+}
+
+.site-list__link {
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 20px;
+  color: $card-color-black;
+  text-decoration: none;
+}

@@ -1,0 +1,27 @@
+.card-other {
+  list-style-type: none;
+}
+
+.card-other__name {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: $card-color-black;
+  font-weight: 400;
+}
+
+.card-other__amount {
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+}
+
+.card-other__value {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.card-other__button {
+
+}

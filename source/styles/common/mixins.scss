@@ -1,9 +1,9 @@
-@mixin font-face() {
+@mixin font-face($font-family, $font-src) {
   @font-face {
-    font-family: "Lato";
+    font-family: $font-family;
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-    src: url("/source/fonts/lato/Lato-Regular.woff2") format("woff2");
+    src: $font-src;
   }
 }
