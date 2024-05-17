@@ -16,12 +16,13 @@
 <body class="page-body">
   <header class="main-header">
     <nav class="main-header__nav main-nav">
-      <a class="main-nav__logo logo" href="#">Логотип "Кэт энерджи"
+      <a class="main-nav__logo logo" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
           <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
-          <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+          <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
         </picture>
+        <img class="logo__title" src="images/logo-title.svg" width="101" height="20" alt="Надпись Cat Energy">
       </a>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
@@ -274,7 +275,8 @@
           <source media="(min-width: 768px)" width="707" height="200" type="image/jpeg" srcset="images/catalog/gift-tablet@1x.jpg 1x, images/catalog/gift-tablet@2x.jpg 2x">
           <img class="gift__image" src="images/catalog/gift-mobile@1x.jpg" width="280" height="290" srcset="images/catalog/gift-mobile@2x.jpg" alt="Чехол для кота в подарок">
         </picture>
-        <p class="gift__description">Закажите все и получите чехол для кота в подарок!</p>
+        <p class="gift__description">Закажите все и получите чехол для кота в подарок!
+        </p>
       </div>
     </section>
     <section class="promos">
@@ -291,7 +293,7 @@
       </form>
     </section>
   </main>
-  <section class="cooperation">
+  <section class="cooperation cooperation--grey">
     <h2 class="visually-hidden">Сотрудничество</h2>
         <p class="cooperation__text">
           Приглашаем к сотрудничеству дилеров!
@@ -311,7 +313,7 @@
   </section>
   <footer class="main-footer">
     <a class="main-footer__logo" href="#">
-      <img src="#" width="128" height="24" alt="Логотип Кэт энерджи">
+      <img class="copyright__image" src="images/logo_footer.svg" width="128" height="24" alt="Логотип HTML Academy">
     </a>
     <ul class="main-footer__social social">
       <li class="social__item">
@@ -324,9 +326,12 @@
         <a class="social__link social__link--telegram" href="#">Telegram</a>
       </li>
     </ul>
-    <a class="copyright__link copyright" href="https://htmlacademy.ru">HTML Academy
-      <img class="copyright__image" src="#" width="27" height="34" alt="Логотип HTML Academy">
+    <a class="copyright__link copyright copyright--text" href="https://htmlacademy.ru">HTML Academy
+     <span class="visually-hidden">HTML Academy</span>
     </a>
+    <a class="copyright__link copyright copyright--image" href="https://htmlacademy.ru">
+      <span class="visually-hidden">Логотип HTML Academy</span>
+     </a>
   </footer>
 </body>
 

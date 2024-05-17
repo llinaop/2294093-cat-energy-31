@@ -20,3 +20,29 @@
   list-style-type: none;
 }
 
+.steps__item::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $bg-basic-green;
+  background-position: center;
+  background-size: 55%;
+  background-repeat: no-repeat;
+}
+
+.steps__item--leaf::before {
+  background-image: url("../../icons/stack.svg#icon_leaf");
+}
+
+.steps__item--water::before {
+  background-image: url("../../icons/stack.svg#icon_water");
+}
+
+.steps__item--eat::before {
+  background-image: url("../../icons/stack.svg#icon_eat");
+}
+
+.steps__item--time::before {
+  background-image: url("../../icons/stack.svg#icon_time");
+}

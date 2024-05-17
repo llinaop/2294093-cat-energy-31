@@ -7,17 +7,22 @@
 }
 
 .social__link {
-
+  display: block;
+  width: 28px;
+  height: 22px;
+  background-color: $dark-grey;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .social__link--vkontakte {
-
+  mask-image: url("../../icons/stack.svg#vk");
 }
 
 .social__link--telegram {
-
+  mask-image: url("../../icons/stack.svg#telegram");
 }
 
 .social__link--youtube {
-
+  mask-image: url("../../icons/stack.svg#youtube");
 }

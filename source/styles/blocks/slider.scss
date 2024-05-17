@@ -7,5 +7,38 @@
 }
 
 .slider__button {
+  display: block;
+  position: absolute;
+  background-color: $dark-grey;
+  border: none;
+  border-radius: 2px;
+  width: 4px;
+  height: 50%;
+  transform: translate(15px, -500px);
+  padding: 0;
+}
 
+.slider__button::before {
+  content: "";
+  background-color: $bacic-white;
+  border: 2px solid $dark-grey;
+  border-radius: 50%;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.slider__button::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 18px;
+  background-color: $dark-grey;
+  mask-image: url("../../icons/stack.svg#slider_switch");
+  mask-repeat: no-repeat;
+  mask-position: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }

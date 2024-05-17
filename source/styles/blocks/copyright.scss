@@ -4,6 +4,18 @@
   text-decoration: none;
 }
 
-.copyright-image {
+.copyright__link {
+  display: block;
+  cursor: pointer;
+}
 
+.copyright--text {
+  color: $base-color-text;
+}
+
+.copyright--image {
+  mask-image: url("../../icons/stack.svg#footer_html-academy");
+  background-color: $dark-grey;
+  width: 27px;
+  height: 34px;
 }
