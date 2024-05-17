@@ -1,5 +1,26 @@
 .hero {
+  background-image: url("../../images/index/background-mobile@2x.jpg");
+  background-color: $bg-basic-green;
+  background-blend-mode: overlay;
+  background-position: top;
+  width: 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
 
+  @media (min-width: $tablet-width) {
+    background: none;
+    background-color: $bacic-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../images/index/background-desktop@2x.jpg");
+    background-color: $bg-basic-green;
+    background-blend-mode: overlay;
+    background-position: right;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 82px;
+  }
 }
 
 .hero__heading {
@@ -8,19 +29,46 @@
   line-height: 36px;
   text-align: center;
   color: $bacic-white;
+  padding: 35px 27px;
+  order: 1;
+
+  @media (min-width: $tablet-width) {
+    color: $title-color-black;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $title-color-black;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 65px 90px 200px;
+  }
 }
 
 .hero__description {
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 14px;
+  text-align: center;
   color: $bacic-white;
-}
+  order: 2;
+  margin: 0 25px 24px 27px;
 
-.hero__image {
-
+  @media (min-width: $tablet-width) {
+    color: $title-color-black;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    margin-left: 40px;
+    margin-right: 90px;
+  }
 }
 
 .hero__button {
 
 }
+
+.hero__image {
+}
+

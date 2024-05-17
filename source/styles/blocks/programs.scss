@@ -1,9 +1,19 @@
 .programs {
-
 }
 
 .programs__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+  }
 }
 
 .programs__item {
@@ -16,39 +26,39 @@
   font-size: 24px;
   line-height: 37px;
   color: $title-color-black;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
 }
 
 .programs__title::before {
   content: "";
   display: block;
-  position: absolute;
-  border-radius: 50%;
   width: 50px;
   height: 50px;
-  background-color: $bg-basic-green;
 }
 
-.programs__title--slim::after {
+.programs__title--slim::before {
   content: "";
   display: block;
   position: absolute;
-  width: 36px;
-  height: 50px;
+  border-radius: 50%;
   background-image: url("../../icons/stack.svg#cat_slim");
-  background-size: 36px 50px;
+  background-color: $bg-basic-green;
+  background-position: center;
   background-repeat: no-repeat;
-  transform: translate(10px, -40px);
 }
 
-.programs__title--pro::after {
+.programs__title--pro::before {
   content: "";
   display: block;
   position: absolute;
-  width: 67px;
-  height: 28px;
+  border-radius: 50%;
   background-image: url("../../icons/stack.svg#cat_fit");
+  background-color: $bg-basic-green;
+  background-position: center;
   background-repeat: no-repeat;
-  transform: translate(-10px, -20px);
 }
 
 .programs__description {

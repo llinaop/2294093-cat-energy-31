@@ -1,13 +1,25 @@
 .site-list {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: $bacic-white;
 
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    gap: 8px;
+  }
 }
 
 .site-list__item {
   list-style-type: none;
-}
+  border-top: 1px solid #e6e6e6;
 
-.site-list__item--active {
-
+  @media (min-width: $tablet-width) {
+    border-top: 0;
+  }
 }
 
 .site-list__link {
@@ -16,4 +28,53 @@
   line-height: 20px;
   color: $card-color-black;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    color: $bacic-white;
+  }
+}
+
+.site-list__item--active {
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid $bg-basic-green;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $bacic-white;
+  }
+}
+
+.site-list__link--catalog {
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 20px;
+  color: $card-color-black;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .site-list__item--active {
+    @media (min-width: $tablet-width) {
+      border-bottom: 2px solid $bg-basic-green;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid $bg-basic-green;
+    }
+  }
 }

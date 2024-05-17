@@ -1,5 +1,7 @@
 .products {
-
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
 }
 
 .products__heading {
@@ -10,5 +12,15 @@
 }
 
 .products__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+  }
 
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
 }

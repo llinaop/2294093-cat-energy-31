@@ -15,28 +15,35 @@
 
 <body class="page-body">
   <header class="main-header">
-    <nav class="main-header__nav main-nav">
-      <a class="main-nav__logo logo" href="index.html">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
           <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
-          <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+          <img class="main-header__logo--image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
         </picture>
-        <img class="logo__title" src="images/logo-title.svg" width="101" height="20" alt="Надпись Cat Energy">
       </a>
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo--title" src="images/logo-title.svg" width="101" height="20" alt="Надпись Cat Energy">
+      </a>
+      <button class="main-header__toggle main-header__toggle--close" type="button">
+        <span class="visually-hidden">Бургер-меню мобильная версия</span>
+      </button>
+    </div>
+    <nav class="main-header__nav main-nav">
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a class="site-list__link" href="index.html">
+          <a class="site-list__link site-list__link--catalog" href="index.html">
             Главная
           </a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link site-list__item--active" href="catalog.html">
+          <a class="site-list__link  site-list__link--catalog site-list__item--active" href="catalog.html">
             Каталог продукции
           </a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link" href="#">
+          <a class="site-list__link site-list__link--catalog" href="#">
             Подбор программы
           </a>
         </li>

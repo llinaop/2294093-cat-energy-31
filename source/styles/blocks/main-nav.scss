@@ -2,17 +2,3 @@
 
 }
 
-.main-nav__toggle {
-  position: absolute;
-  mask-image: url("../../icons/stack.svg#mobile_burger");
-  background-color: $dark-grey;
-  width: 24px;
-  height: 24px;
-  padding: 4px 0;
-  top: 20px;
-  left: 275px;
-}
-
-.main-nav__toggle--close {
-  mask-image: url("../../icons/stack.svg#mobile_close");
-}
